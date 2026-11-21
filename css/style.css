@@ -1,0 +1,239 @@
+/* Barra de navegacion */
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+/* Estilos generales*/
+
+/* section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } */
+
+/* Introduccion */
+.ancho-introduccion {
+  max-width: 800px;
+
+}
+
+/* bordes */
+hr {
+  width: 85%;
+  position: relative;
+  top: 50px;
+  border: none;
+  height: 6px;
+  background: #849c0c;
+  margin-bottom: 50px;
+}
+
+/* lista desordenada */
+.lista{
+  list-style: none; 
+  padding: 0; 
+  margin-left: 5px;
+  margin-bottom: 2px !important; 
+  }
+  
+  .lista li::before { 
+  content: "\2022"; 
+  padding-right: 7px; 
+  color: #849c0c; 
+  }
+
+
+/* Acordeon */
+
+.acordeon {
+  padding: 25px;
+}
+
+.acordeon .card {
+  width: 500%;
+  max-width: 800px;
+  margin: 10px;
+}
+
+/* icono-acordeon */
+
+.icono {
+  padding-right: 8px;
+}
+
+
+/* pie de pagina */
+
+footer {
+  min-height: 220px;
+}
+
+/* .footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+} */
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+.seccion-oscura {
+  color: white;
+  background-color: #4b4b4b;
+}
+
+.proyectos-contenedor {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* .overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+} */
+
+/* boton 1 */
+
+#objetivo a {
+  color: white;
+  text-decoration: none;
+}
+
+#objetivo a:hover {
+  color: #cccccc;
+}
+
+#objetivo a:active {
+  color: #888888;
+}
+
+
+/* boton 2 */
+#objetivo2 {
+  padding: 10px 20px;
+  background-color: #00a135;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#objetivo2:hover {
+  background-color: #157347;
+}
+
+#objetivo2:active {
+  background-color: #146c43;
+}
+
+#objetivo2 a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 767px) {
+
+  /* Barra de navegacion */
+  .navbar-brand {
+    display: none;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+
+  .texto-navbar {
+    display: none;
+  }
+
+  .nav-item {
+    margin-top: 7px;
+  }
+
+  .nav-boton{
+    width: 134px;
+  }
+
+  .container-barra{
+    width: 95%;
+  }
+
+  /* Introduccion index */
+
+  .lista-mediano{
+    padding-left: 37px;
+  }
+
+  .hero-inferior-imagen{
+    width: 330px;
+  }
+
+  /* ul li {
+    margin-top: 7px;
+  }
+
+  ul li:hover {
+    background-color: #6B8E23;
+    border-radius: 6px;
+  } */
+}
+
+@media screen and (min-width: 767px){
+
+  .imagen-navegador{
+    display: none;
+  }
+
+  
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}

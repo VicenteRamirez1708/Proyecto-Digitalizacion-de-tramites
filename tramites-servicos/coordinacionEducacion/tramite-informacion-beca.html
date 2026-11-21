@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="H. Ayuntamiento de Isidro Fabela">
+  <meta name="keywords" content="Tramites, Servicios, Ayuntamiento, Isidro-Fabela">
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- ESTILOS-CSS -->
+  <link rel="stylesheet" href="css/style_info.css">
+
+  <!-- TITULO -->
+  <title>H. Ayuntamiento Isidro Fabela | Tramites y Servicios</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="imagenes/icon.png">
+
+  <!-- Sweet Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="http://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <!-- Javascript -->
+  <script type="text/javascript" src="js/tramite.js"></script>
+</head>
+
+<body>
+
+  <!-- Barra de navegacion -->
+  <!-- <nav class="navbar navbar-expand-md sticky-top" style="background-color: #849c0c;">
+    <div class="container-fluid">
+      <div class="navbar-collapse">
+        <a class="navbar-brand" href="index.html">
+          <img src="imagenes/logo.png" alt="Logo de Isidro Fabela" width="110">
+          <span class="texto-navbar fs-5 text-dark fw-bold">| H. Ayuntamiento Isidro Fabela.</span>
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" id="objetivo"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="objetivo2"></a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-md sticky-top" style="background-color: #849c0c;">
+    <div class="container-fluid container-barra">
+
+
+      <div class="imagen-navegador">
+
+        <a class="navbar-oculto" href="index.html">
+          <img src="imagenes/logo.png" alt="Logo de Isidro Fabela" width="110">
+        </a>
+
+
+      </div>
+
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+
+        <a class="navbar-brand" href="index.html">
+          <img src="imagenes/logo.png" alt="Logo de Isidro Fabela" width="110">
+          <span class="texto-navbar fs-5 text-dark fw-bold">| H. Ayuntamiento Isidro Fabela.</span>
+        </a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" id="objetivo"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-boton" id="objetivo2"></a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Seccion hero -->
+  <section class="hero">
+
+  </section>
+
+
+  <!-- --------informacion del tramite--------- -->
+
+  <!-- Titulo del tramite -->
+
+  <section class="d-flex flex-column justify-content-center align-items-center pt-5 w-75 m-auto" id="intro">
+    <h1 class="p-3 fs-2 border-top border-3 rounded text-white  text-center" style="background-color: #6c7929;">
+      <p>Apoyo para el registro de becas escolares</p>
+  </section>
+
+  <!-- descarga pdf -->
+  <section class="d-flex flex-column justify-content-center align-items-center pt-4 w-75 m-auto" id="intro">
+    <!-- <h1 class="p-2 fs-3 border-top border-3 rounded text-light text-center" style="background-color: #659a24;">
+      Tipo: Tramite|   
+      <a class="descarga-text text-white"
+        href="pdfs/Apoyo para la obtención de becas a nivel licenciatura.pdf">Imprimir
+        <i class="bi bi-printer"></i>
+      </a>
+    </h1> -->
+
+    <ul class="list-group list-group-flush lista-descargapdf">
+      <li class="list-group-item lista-li">
+        <span class="fs-5 text-dark">Tipo: <span class="tipo-tramite">tramite</span></span>
+      </li>
+      <li class="list-group-item lista-li">
+        <a class="descarga-text text-dark fs-5" href="pdfs/Apoyo para la obtención de becas a nivel licenciatura.pdf"><i
+            class="bi bi-printer"></i> Imprimir
+        </a>
+      </li>
+      <li class="list-group-item fs-5 lista-li"> <a href="subirarchivos.html" id="hrefTramite">Realizar tramite</a>
+      </li>
+      <li></li>
+    </ul>
+
+  </section>
+
+  <!-- ---------acordeon de tramite------ -->
+  <!-- primer acordeon -->
+  <section class="acordeon d-flex justify-content-center align-items-center">
+    <div class="accordion card " id="accordionPanelsStayOpenExample">
+      <div class="accordion-item border border-success">
+        <h2 class="accordion-header">
+          <button class="accordion-button text-light" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne"
+            style="background-color: #659a24;">
+            <h6>DESCRIPCIÓN</h6>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <p>Consiste en dar a conocer a los estudiantes el procedimiento de trámite para obtener una beca.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- segundo acordeon -->
+  <section class="acordeon d-flex justify-content-center align-items-center">
+    <div class="accordion card " id="accordionPanelsStayOpenExample">
+      <div class="accordion-item border border-success">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwo" style="background-color: #659a24;">
+            <h6>FUNDAMENTO LEGAL</h6>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            De acuerdo a 10 establecido en las reglas de operación del programa de becas que emite el gobierno del
+            Estado
+            de México y Gobierno Federal.<br>
+            Manual de procedimientos.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- tercer acordeon -->
+  <section class="acordeon d-flex justify-content-center align-items-center">
+    <div class="accordion card " id="accordionPanelsStayOpenExample">
+      <div class="accordion-item border border-success">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseThree" style="background-color: #659a24;">
+            <h6>CASOS EN LOS QUE EL TRÁMITE DEBE REALIZARSE</h6>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Cuando el educando 10 solicite por su situación socioeconúnica y desernpeño académico y curnpla con los
+            de la comvocatoria.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- cuarto acordeon -->
+  <section class="acordeon d-flex justify-content-center align-items-center">
+    <div class="accordion card " id="accordionPanelsStayOpenExample">
+      <div class="accordion-item border border-success">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseFour" style="background-color: #659a24;">
+            <h6>CRITERIOS DE
+              RESOLUCION DEL
+              TRAMITE</h6>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Se otorga de acuerdo con los lineamientos de las reglas de operación que dicta la instancia ejecutora del
+            programa de apoyo
+            (estatal o federal) conforme a las reglas de operación.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Pie de pagina (footer) -->
+
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <div class="container text-center proyectos-contenedor">
+      <div class="row">
+
+        <!-- Direccion -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3>Dirección:</h3>
+          <p>AV. CONSTITUCIÓN N° 1 COL. LAURELES, ISIDRO FABELA, ESTADO DE MÉXICO., Estado de México, Mexico, 54480</p>
+        </div>
+
+        <!-- Contacto -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3>Contactanos:</h3>
+          <p>Tel: 55 8994 7131
+            presidencia@isidrofabela.gob.mx</p>
+        </div>
+
+        <!-- Horarios -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3>Horarios:</h3>
+          <p>Lunes a viernes de: 8p.m. a 5p.m.<br>
+            Sabados de: 8p.m. a 2p.m.<br>
+            Domingos Cerrado</p>
+        </div>
+
+        <!-- Redes Sociales -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3>Nuestras Redes</h3>
+          <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="https://www.facebook.com/GobiernoMunicipalIsidroFabela?ref=embed_page" target="_blank"
+              rel="noopener noreferrer" title="Gobierno Municipal Isidro Fabela">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.facebook.com/IMCUFIDEIsidroFabela2/?ref=embed_page" target="_blank"
+              rel="noopener noreferrer" title="Instituto Municipal de Cultura Física y Deporte de Isidro Fabela. ">
+              <i class="bi bi-dribbble"></i>
+            </a>
+            <a href="https://www.facebook.com/SistemaDIFIsidroFabela/?ref=embed_page" target="_blank"
+              rel="noopener noreferrer" title="DIF Isidro Fabela">
+              <i class="bi bi-people-fill"></i>
+            </a>
+            <!-- <a href="mailto:janedoe@micorreo.com" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-envelope"></i>
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

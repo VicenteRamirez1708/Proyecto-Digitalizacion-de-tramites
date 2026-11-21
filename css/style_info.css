@@ -1,0 +1,198 @@
+/* Barra de navegacion*/
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Botones de la lista */
+/* boton 1 */
+
+#objetivo a {
+  color: white;
+  text-decoration: none;
+}
+
+#objetivo a:hover {
+  color: #cccccc;
+}
+
+#objetivo a:active {
+  color: #888888;
+}
+
+
+/* boton 2 */
+#objetivo2 {
+  padding: 10px 20px;
+  background-color: #00a135;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#objetivo2:hover {
+  background-color: #157347;
+}
+
+#objetivo2:active {
+  background-color: #146c43;
+}
+
+#objetivo2 a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Seccion Hero */
+
+.hero {
+  background-color: #ffffff;
+  min-height: 20px;
+  text-align: center;
+}
+
+/* Descarga pdf */
+
+.descarga-text {
+  text-decoration: none;
+}
+
+.descarga-text:hover {
+  color: #cccccc !important;
+}
+
+/* texto buttom 0px */
+p {
+  margin-bottom: 0px !important;
+}
+
+/* color pa tipo de tramite */
+.tipo-tramite {
+  color: #0e813c;
+}
+
+/* lista desordenada */
+.lista-descargapdf {
+  list-style: none;
+  padding: 0;
+  margin-left: 5px;
+  margin-bottom: 2px !important;
+}
+
+.lista-descargapdf .lista-li::before {
+  content: "\2022";
+  padding-right: 7px;
+  color: #849c0c;
+}
+
+
+/* linea cuando se colapsa (opcional) */
+
+/* hr{
+    height:1vh;
+    width:.5vw;
+    border-width:0;
+    color:#000;
+    background-color:#000;
+   } */
+
+
+/* Acordeon */
+
+.acordeon {
+  padding: 20px;
+}
+
+.acordeon .card {
+  width: 500%;
+  max-width: 800px;
+  margin: 10px;
+}
+
+/* pie de pagina */
+
+footer {
+  min-height: 220px;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.seccion-oscura {
+  color: white;
+  background-color: #4b4b4b;
+}
+
+.proyectos-contenedor {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 767px) {
+
+  /* Barra de navegacion */
+  .navbar-brand {
+    display: none;
+  }
+
+  .texto-navbar {
+    display: none;
+  }
+
+  .nav-item {
+    margin-top: 7px;
+  }
+
+  .nav-boton {
+    width: 134px;
+  }
+
+  .container-barra {
+    width: 95%;
+  }
+
+  /* texto footer */
+  .col-md-6 p{
+    margin-bottom: 1rem !important;
+  }
+}
+
+@media screen and (min-width: 767px) {
+
+  .imagen-navegador {
+    display: none;
+  }
+
+
+}
